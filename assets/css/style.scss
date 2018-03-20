@@ -1,0 +1,120 @@
+@import '_vars';
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400');
+html,
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: $bg-light;
+}
+.hero {
+    background-image: url('');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+.hero-overlay__wrapper {
+    background-image: url("../images/hero-overlay.png");
+    background-size: cover;
+    background-position: bottom; 
+    height: 700px;
+}
+.navbar {
+    padding: 45px 0 45px 0;
+    border-top: 5px solid $blue-accent;
+    background-color: transparent !important;
+    .container {
+        height: 80px;
+    }
+    .navbar-brand {
+        width: 200px;
+    }
+}
+
+.navbar-item img {
+    min-height: 80px;
+    min-width: 300px;
+}
+
+.controller {
+    padding-top: 125px;
+    position: relative;
+}
+.sticker {
+    position: absolute;
+    padding-top: 127px;
+    margin-left: -600px;
+    
+
+}
+.color__select {
+    div {
+        display: inline-block;
+    }
+    input[type="radio"] {
+        display: none;
+        +label {
+            span {
+                display: inline-block;
+                width: 50px;
+                height: 20px;
+                margin: -1px 4px 0 0;
+                vertical-align: middle;
+                cursor: pointer;
+                border-radius: 10%;
+                box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+                background-repeat: no-repeat;
+                background-position: center;
+                text-align: center;
+                line-height: 25px;
+                img {
+                    opacity: 0;
+                    transition: all .3s ease;
+                }
+            }
+        }
+        &#blue+label span {
+            background-color: $blue;
+        }
+        &#magenta+label span {
+            background-color: $magenta;
+        }
+        &#tomato+label span {
+            background-color: $tomato;
+        }
+        &#green+label span {
+            background-color: $green;
+        }
+        &#silver+label span {
+            background-color: $silver;
+        }
+        &:checked+label span img {
+            opacity: 1;
+            height: 15px;
+            width: 15px; 
+        }
+    }
+}
+
+.sticker__select {
+    label > input{ /* HIDE RADIO */
+        visibility: hidden; /* Makes input not-clickable */
+        position: absolute; /* Remove input from document flow */
+      }
+    label > input + img{ /* IMAGE STYLES */
+        cursor:pointer;
+        padding-top: 50px;
+        height: 150px;
+        width: 150%;
+      }
+
+    .columns {
+        margin-top: 0!important;
+    }
+}
+
+.sticker {
+    z-index: 999;
+}
+.sticker-wrapper {
+    height: 500px;
+    background-color: $bg-selection;
+}

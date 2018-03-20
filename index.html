@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PlayStickers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <section id="heroBg" class="hero is-transparent has-shadow">
+        <div class="hero-overlay hero-overlay__wrapper" id="overlay_bg">
+            <div class="hero-head">
+                <nav class="navbar">
+                    <div class="container">
+                        <div class="navbar-brand">
+                            <a class="navbar-item logo" href="/">
+                                <img src="assets/images/logo.svg" alt="Logo" height="80px">
+                            </a>
+                            <span class="navbar-burger burger" data-target="navbarMenu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </div>
+                        <div id="navbarMenu" class="navbar-menu">
+                            <div class="navbar-end">
+                                <span class="navbar-item">
+                                    <a class="button is-info is-rounded">Cart</a>
+                                    <a class="shipping">
+                                        <span> Free world shipping</span>
+                                        <span class="icon">
+                                            <i class="fa fa-check"></i>
+                                        </span>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="has-text-centered">
+                <img class="controller" src="assets/images/controller-base__blue.png" id="picture" width=600px>
+                <img class="sticker" src="" id="stickerActive" width=600px>
+                <div class="color__select">
+                    <div>
+                        <input type="radio" id="blue" name="color" value="blue" checked onClick="changeSrc()">
+                        <label for="blue">
+                            <span>
+                                <img src="assets/images/checked.svg" alt="Checked Icon" />
+                            </span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="magenta" name="color" value="magenta" onClick="changeSrc()">
+                        <label for="magenta">
+                            <span id="checked-icon">
+                                <img src="assets/images/checked.svg" alt="Checked Icon" />
+                            </span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="tomato" name="color" value="tomato" onClick="changeSrc()">
+                        <label for="tomato">
+                            <span>
+                                <img src="assets/images/checked.svg" alt="Checked Icon" />
+                            </span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="green" name="color" value="green" onClick="changeSrc()">
+                        <label for="green">
+                            <span>
+                                <img src="assets/images/checked.svg" alt="Checked Icon" />
+                            </span>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="silver" name="color" value="silver" onClick="changeSrc()">
+                        <label for="silver">
+                            <span>
+                                <img src="assets/images/checked.svg" alt="Checked Icon" />
+                            </span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="sticker-wrapper">
+        <div class="container">
+            <div class="columns sticker__select">
+
+                <div class="column">
+                    <label>
+                        <input type="radio" id="batman" name="stickerSelect" value="batman" onClick="stickerBg()">
+                        <img src="assets/images/batman.svg" />
+                    </label>
+                </div>
+
+                <div class="column">
+                    <label>
+                        <input type="radio" id="destiny" name="stickerSelect" value="destiny" onClick="stickerBg()">
+                        <img src="assets/images/destiny.svg" />
+                    </label>
+                </div>
+
+                <div class="column">
+                    <label>
+                        <input type="radio" id="halo" name="stickerSelect" value="halo" onClick="stickerBg()">
+                        <img src="assets/images/halo.svg" />
+                    </label>
+                </div>
+
+                <div class="column">
+                    <label>
+                        <input type="radio" id="aperture" name="stickerSelect" value="aperture" onClick="stickerBg()">
+                        <img src="assets/images/aperture.svg" />
+                    </label>
+                </div>
+
+                <div class="column">
+                    <label>
+                        <input type="radio" id="driveclub" name="stickerSelect" value="driveclub" onClick="stickerBg()">
+                        <img src="assets/images/driveclub.svg" />
+                    </label>
+                </div>
+
+                <div class="column">
+                    <label>
+                        <input type="radio" id="forza" name="stickerSelect" value="forza" onClick="stickerBg()">
+                        <img src="assets/images/forza.svg" />
+                    </label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+    <script async type="text/javascript" src="assets/js/scripts.js"></script>
+</body>
+
+</html>
