@@ -4,6 +4,11 @@ html,
 body {
     font-family: 'IBM Plex Sans', sans-serif;
     background-color: $bg-light;
+    max-height: 100vh;
+    border-top: 1px solid $blue-accent;
+}
+#heroBG {
+    transition: all .3s;
 }
 .hero {
     background-image: url('');
@@ -17,9 +22,12 @@ body {
     background-position: bottom; 
     height: 700px;
 }
+#overlay_bg_accent {
+    height: 700px;
+
+}
 .navbar {
     padding: 45px 0 45px 0;
-    border-top: 5px solid $blue-accent;
     background-color: transparent !important;
     .container {
         height: 80px;
@@ -111,10 +119,18 @@ body {
     }
 }
 
+.stickerActive {
+    outline: solid 1px red;
+    padding: 10px 0 10px 0;
+}
 .sticker {
     z-index: 999;
 }
 .sticker-wrapper {
-    height: 500px;
+    height: 200px;
     background-color: $bg-selection;
+    .columns {
+        margin: 0;
+        height: 200px;
+    }
 }
