@@ -1,13 +1,6 @@
 
-// le burger
-(function () {
-    var burger = document.querySelector('.burger');
-    var menu = document.querySelector('#' + burger.dataset.target);
-    burger.addEventListener('click', function () {
-        burger.classList.toggle('is-active');
-        menu.classList.toggle('is-active');
-    });
-})();
+// this shit is so hacked together i am ashamed to even look at it
+
 
 // controller color switcher
 function changeSrc() {
@@ -34,20 +27,56 @@ function stickerBg() {
     if (document.getElementById("batman").checked) {
         document.getElementById("heroBg").style.backgroundImage = "url('assets/images/batman-bg.png')";
         document.getElementById("stickerActive").src = "assets/images/controller-sticker__batman.png";
+        document.getElementById("batmanActive").classList.add("stickerActive");
+        document.getElementById("destinyActive").classList.remove("stickerActive");
+        document.getElementById("haloActive").classList.remove("stickerActive");
+        document.getElementById("apertureActive").classList.remove("stickerActive");
+        document.getElementById("driveclubActive").classList.remove("stickerActive");
+        document.getElementById("forzaActive").classList.remove("stickerActive");
     } else if (document.getElementById("destiny").checked) {
         document.getElementById("heroBg").style.backgroundImage = "url('assets/images/destiny-bg.png')";
         document.getElementById("stickerActive").src = "assets/images/controller-sticker__destiny.png";
+        document.getElementById("destinyActive").classList.add("stickerActive");
+        document.getElementById("batmanActive").classList.remove("stickerActive");
+        document.getElementById("haloActive").classList.remove("stickerActive");
+        document.getElementById("apertureActive").classList.remove("stickerActive");
+        document.getElementById("driveclubActive").classList.remove("stickerActive");
+        document.getElementById("forzaActive").classList.remove("stickerActive");
     } else if (document.getElementById("halo").checked) {
         document.getElementById("heroBg").style.backgroundImage = "url('assets/images/halo-bg.png')";
         document.getElementById("stickerActive").src = "assets/images/controller-sticker__halo.png";
+        document.getElementById("haloActive").classList.add("stickerActive");
+        document.getElementById("destinyActive").classList.remove("stickerActive");
+        document.getElementById("batmanActive").classList.remove("stickerActive");
+        document.getElementById("apertureActive").classList.remove("stickerActive");
+        document.getElementById("driveclubActive").classList.remove("stickerActive");
+        document.getElementById("forzaActive").classList.remove("stickerActive");
     }  else if (document.getElementById("aperture").checked) {
         document.getElementById("heroBg").style.backgroundImage = "url('assets/images/aperture-bg.png')";
         document.getElementById("stickerActive").src = "assets/images/controller-sticker__aperture.png";
+        document.getElementById("apertureActive").classList.add("stickerActive");
+        document.getElementById("destinyActive").classList.remove("stickerActive");
+        document.getElementById("haloActive").classList.remove("stickerActive");
+        document.getElementById("batmanActive").classList.remove("stickerActive");
+        document.getElementById("driveclubActive").classList.remove("stickerActive");
+        document.getElementById("forzaActive").classList.remove("stickerActive");
     } else if (document.getElementById("driveclub").checked) {
         document.getElementById("heroBg").style.backgroundImage = "url('assets/images/driveclub-bg.png')";
         document.getElementById("stickerActive").src = "assets/images/controller-sticker__driveclub.png";
+        document.getElementById("driveclubActive").classList.add("stickerActive");
+        document.getElementById("destinyActive").classList.remove("stickerActive");
+        document.getElementById("haloActive").classList.remove("stickerActive");
+        document.getElementById("apertureActive").classList.remove("stickerActive");
+        document.getElementById("batmanActive").classList.remove("stickerActive");
+        document.getElementById("forzaActive").classList.remove("stickerActive");
     } else if (document.getElementById("forza").checked) {
         document.getElementById("heroBg").style.backgroundImage = "url('assets/images/forza-bg.png')";
         document.getElementById("stickerActive").src = "assets/images/controller-sticker__forza.png";
+        document.getElementById("forzaActive").classList.add("stickerActive");
+        document.getElementById("destinyActive").classList.remove("stickerActive");
+        document.getElementById("haloActive").classList.remove("stickerActive");
+        document.getElementById("apertureActive").classList.remove("stickerActive");
+        document.getElementById("driveclubActive").classList.remove("stickerActive");
+        document.getElementById("batmanActive").classList.remove("stickerActive");
     }
 }

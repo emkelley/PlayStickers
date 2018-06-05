@@ -10,41 +10,21 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
 </head>
 
 <body>
-    <section id="heroBg" class="hero is-transparent has-shadow">
+    <section id="heroBg" class="hero has-shadow">
         <div class="hero-overlay hero-overlay__wrapper" id="overlay_bg">
             <div id="overlay_bg_accent">
                 <div class="hero-head">
-                    <nav class="navbar">
-                        <div class="container">
-                            <div class="navbar-brand">
-                                <a class="navbar-item logo" href="/">
-                                    <img id="logo" src="assets/images/logo.svg" alt="Logo" height="80px">
-                                </a>
-                                <span class="navbar-burger burger" data-target="navbarMenu">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </span>
-                            </div>
-                            <div id="navbarMenu" class="navbar-menu">
-                                <div class="navbar-end">
-                                    <span class="navbar-item">
-                                        <a class="button is-info is-rounded">Cart</a>
-                                        <a class="shipping">
-                                            <span> Free world shipping</span>
-                                            <span class="icon">
-                                                <i class="fa fa-check"></i>
-                                            </span>
-                                        </a>
-                                    </span>
-                                </div>
-                            </div>
+                    <div class="columns">
+                        <div class="column is-12 has-text-centered">
+                            <a class="logo" href="/">
+                                <img id="logo" src="assets/images/logo.svg" alt="Logo" height="80px" width="300px">
+                            </a>
                         </div>
-                    </nav>
+                    </div>
                 </div>
 
                 <div class="has-text-centered">
@@ -52,7 +32,7 @@
                     <img class="sticker" src="" id="stickerActive" width=600px>
                     <div class="color__select">
                         <div>
-                            <input type="radio" id="blue" name="color" value="blue" checked onClick="changeSrc()">
+                            <input type="radio" id="blue" name="color" value="blue" onClick="changeSrc()">
                             <label for="blue">
                                 <span>
                                     <img src="assets/images/checked.svg" alt="Checked Icon" />
@@ -103,42 +83,42 @@
         <div class="container">
             <div class="columns sticker__select">
 
-                <div class="column stickerActive" >
+                <div id="batmanActive" class="column" >
                     <label>
                         <input type="radio" id="batman" name="stickerSelect" value="batman" onClick="stickerBg()">
                         <img src="assets/images/batman.svg" />
                     </label>
                 </div>
 
-                <div class="column">
+                <div id="destinyActive" class="column">
                     <label>
                         <input type="radio" id="destiny" name="stickerSelect" value="destiny" onClick="stickerBg()">
                         <img src="assets/images/destiny.svg" />
                     </label>
                 </div>
 
-                <div class="column">
+                <div id="haloActive" class="column">
                     <label>
                         <input type="radio" id="halo" name="stickerSelect" value="halo" onClick="stickerBg()">
                         <img src="assets/images/halo.svg" />
                     </label>
                 </div>
 
-                <div class="column">
+                <div id="apertureActive" class="column">
                     <label>
                         <input type="radio" id="aperture" name="stickerSelect" value="aperture" onClick="stickerBg()">
                         <img src="assets/images/aperture.svg" />
                     </label>
                 </div>
 
-                <div class="column">
+                <div id="driveclubActive" class="column">
                     <label>
                         <input type="radio" id="driveclub" name="stickerSelect" value="driveclub" onClick="stickerBg()">
                         <img src="assets/images/driveclub.svg" />
                     </label>
                 </div>
 
-                <div class="column">
+                <div id="forzaActive" class="column">
                     <label>
                         <input type="radio" id="forza" name="stickerSelect" value="forza" onClick="stickerBg()">
                         <img src="assets/images/forza.svg" />
